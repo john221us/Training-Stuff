@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Canvas Test</title>
+        <script>
+            function fl() {
+                var canvas = document.getElementById("smlRectangle");
+                context = canvas.getContext("2d");
+                context.fillStyle = "rgb(0,0,255)";
+                context.fillRect(10, 20, 200, 100);
+            }
+        </script>
+    </head>
+    <body onload = "fl();">
+        <canvas id="smlRectangle" height="100" width="200"></canvas>
+        <svg height="1000px" width="1000px">
+            <rect id="myRect" height="100px" width="100px" fill="blue"/>
+        </svg>
+    </body>
+</html>
